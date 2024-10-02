@@ -13,7 +13,7 @@ import java.util.List;
  * Created by jt, Spring Framework Guru.
  */
 @JsonIgnoreProperties(ignoreUnknown = true, value = "pageable")
-public class BeerDTOPageImpl<BeerDTO> extends PageImpl<guru.springframework.spring6resttemplate.model.BeerDTO> {
+public class BeerDTOPageImpl extends PageImpl<guru.springframework.spring6resttemplate.model.BeerDTO> {
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public BeerDTOPageImpl(@JsonProperty("content") List<guru.springframework.spring6resttemplate.model.BeerDTO> content,
